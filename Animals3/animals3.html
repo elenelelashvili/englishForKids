@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animals 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="icon"
+      href="../icon.jpg"
+      type="image/x-icon"
+    />
+</head>
+<body>
+    
+    <header>
+    <div class="burgir">
+        
+
+    <div class="menu-btn">
+        <div class="menu-btn_burger"></div>
+    </div>
+
+    <div class="checkbox">
+        
+            <div class="checkbox-text">
+             <p>Train:</p>
+            </div>
+            <div class="checkbox-check">
+                <label>
+            <input type="checkbox" id="my-checkbox" onclick="isChecked()">
+            <span class="check"></span>
+        </label>
+    </div>
+        
+    </div>
+        <div class="hidden">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../MainMenu/index.html" class="nav-link">Main menu</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Fairytales/fairytales.html" class="nav-link">Fairytales</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Animals1/animals1.html"  class="nav-link">Animals 1</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Animals2/animals2.html" >Animals 2</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Animals3/animals3.html" style="color:rgb(248, 112, 0);" class="nav-link">Animals 3</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Food1/food1.html" class="nav-link">Food 1</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Food2/food2.html" class="nav-link">Food 2</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Emotions/emotions.html" class="nav-link">Shapes</a>
+                </li>
+    
+                <li class="nav-item">
+                    <a href="../Places/places.html" class="nav-link">Colors</a>
+                </li>
+            </ul> 
+        </div>
+    </div>
+</header>
+<div class="fog"></div>
+<div class="main-page">
+<h1>Animals 3</h1>
+<div class="content">
+    <div class="card1">
+        <div class="front">
+        <div class="zeb">
+        <img src="images/snail.PNG" id="zeb">
+        <div class = "zebra-text">
+        <h2>Snail</h2>
+        <audio id="zebra" src="sounds/zebra.mp3"></audio>
+
+        <div class="tilt">
+        <img src="../tilt.png" class="tilt1">
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="back">
+        <img src="images/snail.PNG" id="zeb-under">
+        <h2>ლოკოკინა</h2>
+        <audio id="zebra" src="sounds/zebra.mp3"></audio>
+
+
+    </div>
+    </div>
+
+
+
+    <div class="card2">
+        <div class="front">
+        <a>
+        <img src="images/elephant.PNG" id="tur">
+        <div class="turtle-text">
+        <h2>elephant</h2>
+        <audio id="turtle" src="sounds/turtle.mp3"></audio>
+            
+
+        <div class="tilt">
+            <img src="../tilt.png" class="tilt2">
+        </div>
+        </a>
+    </div>
+    </div>
+    <div class="back">
+        <a>
+            <img src="images/elephant.PNG" id="tur-under">
+            <h2>სპილო</h2>
+            <audio id="turtle" src="sounds/turtle.mp3"></audio>
+            <div class="tilt">
+                <img src="../tilt.png">
+            </div>
+            </a>
+    </div>
+    </div>
+
+    <div class="card3" onclick="sparrow()">
+        <div class="front">
+        <img src="images/duck.PNG" id="spar">
+        <div class="sparrow-text">
+        <h2>duck</h2>
+        <audio id="sparrow" src="sounds/sparrow.mp3"></audio>
+        <div class="tilt" >
+            <img src="../tilt.png" class="tilt3">
+        </div>
+    </div>
+</div>
+
+    <div class="back">
+        <img src="images/duck.PNG" id="spar-under">
+        <h2>იხვი</h2>
+        <audio id="sparrow" src="sounds/sparrow.mp3"></audio>
+    </div>
+
+
+
+    </div>
+
+    <div class="card4" onclick="unicorn()">
+        <div class="front">
+        <img src="images/leopard.PNG" id="uni">
+        <div class="unicorn-text">
+        <h2>leopard</h2>
+        <audio id="unicorn" src="sounds/unicorn.mp3"></audio>
+        <div class="tilt">
+            <img src="../tilt.png" class="tilt4">
+        </div>
+    </div>
+    </div>
+
+    <div class="back">
+        <img src="images/leopard.PNG" id="uni-under">
+        <h2>ლეოპარდი</h2>
+        <audio id="unicorn" src="sounds/unicorn.mp3"></audio>
+    </div>
+
+    </div>
+
+    <div class="card5" onclick="tiger()">
+        <div class="front">
+        <img src="images/sheep.PNG" id="tig">
+        <div class="tiger-text">
+        <h2>sheep</h2>
+        <audio id="tiger" src="sounds/tiger.mp3"></audio>
+        <div class="tilt">
+            <img src="../tilt.png" class="tilt5">
+        </div>
+    </div>
+    </div>
+
+    <div class="back">
+        <img src="images/sheep.PNG" id="tig-under">
+        <h2>ცხვარი</h2>
+        <audio id="tiger" src="sounds/tiger.mp3"></audio>
+    </div>
+
+    </div>
+
+    <div class="card6" onclick="hedgehog()">
+        <div class="front">
+        <img src="images/cat.PNG" id="hed">
+        <div class="hedgehog-text">
+        <h2>Cat</h2>
+        <audio id="hedgehog" src="sounds/hedgehog.mp3"></audio>
+        <div class="tilt">
+            <img src="../tilt.png" class="tilt6">
+        </div>
+    </div>
+    </div>
+
+    <div class="back"> 
+        <img src="images/cat.PNG" id="hed-under">
+        <h2>კატა</h2>
+        <audio id="hedgehog" src="sounds/hedgehog.mp3"></audio></div>
+    </div>
+
+    <div class="card7" onclick="dolphin()">
+        <div class="front">
+        <img src="images/rhino.PNG" id="dol">
+        <div class="dolphin-text">
+        <h2>rhino</h2>
+        <audio id="dolphin" src="sounds/dolphin.mp3"></audio>
+        <div class="tilt">
+            <img src="../tilt.png" class="tilt7">
+        </div>
+    </div>
+    </div>
+
+    <div class="back">
+        <img src="images/rhino.PNG" id="dol-under">
+        <h2>მარტორქა</h2>
+        <audio id="dolphin" src="sounds/dolphin.mp3"></audio>
+    </div>
+
+    </div>
+
+    <div class="card8" onclick="hamster()">
+        <div class="front">
+        <img src="images/crocodile.PNG" id="ham">
+        <div class="hamster-text">
+        <h2>Crocodile</h2>
+        <audio id="hamster" src="sounds/hamster.mp3"></audio>
+        <div class="tilt">
+            <img src="../tilt.png" class="tilt8">
+        </div>
+        </div>
+    </div>
+
+    <div class="back">
+        <img src="images/crocodile.PNG" id="ham-under">
+        <h2>ნიანგი</h2>
+        <audio id="hamster" src="sounds/hamster.mp3"></audio>
+    </div>
+    </div>
+</div>
+
+<audio id="correct" src="../correct.mp3"></audio>
+<audio id="wrong" src="../wrong.mp3"></audio>
+
+
+
+<footer>
+    <img src="../start-1438842-1214529.png" onclick="start()" id="imgClickAndChange">
+    <img src="../repeat.png" id="repeat">
+
+</footer>
+
+</div>
+
+    
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
