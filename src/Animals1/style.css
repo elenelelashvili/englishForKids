@@ -1,0 +1,318 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image:url("background.png");
+    background-size:auto;
+    display:flex;
+    flex-direction: row;
+}
+
+header{
+    width:70vh;
+    float:left;
+    padding-left:60px;
+    height:120vh;
+    transition: all 0.8s;
+    z-index: 1;
+}
+
+#hightlight{
+    color:orange;
+}
+
+
+.menu-btn{
+    margin-top:60px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:35px;
+    height:40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger{
+    width:50px;
+    height:5px;
+    background: rgb(255, 133, 89);
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burger::before, .menu-btn_burger::after{
+    content:'';
+    position:absolute;
+    width:35px;
+    height:5px;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+}
+
+.menu-btn_burger::before{
+    background: rgb(255, 166, 0);
+    transform: translateY(13px);
+}
+
+.menu-btn_burger::after{
+    transform: translateY(-13px);
+    background: rgb(119, 0, 255);
+}
+
+
+
+.hidden{
+    margin-top:20xpx;
+    float:left;
+    margin-left:-70px;
+    padding-left:20px;
+    display:none;
+    transition: all 0.8s;
+}
+
+li a{
+    text-decoration: none;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 60xpx;
+    font-weight:800;
+    cursor:pointer;
+    
+}
+
+
+li{
+    list-style: none;
+    margin-left:35px;
+    width:fit-content;
+    font-size:30px;
+    
+}
+
+
+/* animation */
+.menu-btn.open .menu-btn_burger{
+    background: white;
+}
+
+.menu-btn.open .menu-btn_burger::before{
+    background: white;
+}
+
+.menu-btn.open .menu-btn_burger::after{
+    background: white;
+}
+
+/* checkbox */
+
+input[type ="checkbox"]{
+    visibility: hidden;
+    display: none;
+}
+
+.check{
+    display:block;
+    position: relative;
+    width:80px;
+    height:40px;
+    background-color: orange;
+    cursor:pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+}
+
+input[type = "checkbox"]:checked ~ .check{
+    background:rgb(119, 0, 255);
+}
+
+.check:before{
+    content:'';
+    position: absolute;
+    top:4px;
+    left:4px;
+    background-color: #fff;
+    width:32px;
+    height:32px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+input[type = "checkbox"]:checked ~ .check:before{
+    transform: translateX(40px);
+}
+
+.checkbox{
+    width:160px;
+    overflow: hidden;
+    float:right;
+    position: absolute;
+    right:50px;
+    top:60px;
+}
+
+.checkbox-text{
+    width:75px;
+    float:left;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top:5px;
+
+}
+
+.checkbox-check{
+    float:right;
+}
+
+.fog{
+    height:120%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    background-color: black;
+    opacity: 40%;
+    width:100%;
+    display:none;
+}
+
+
+/* end of header */
+
+/* start of main page*/ 
+
+.content{
+    margin-top:20px;
+    margin-left: -70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    position:absolute;
+    
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8{
+    position:relative;
+    transition:transform 0.6s;
+    transform-style:preserve-3d;
+    
+}
+
+.front{
+    transition:transform 0.6s;
+    transform-style:preserve-3d;
+    position:absolute;
+}
+
+.front, .back{
+    padding-bottom: 30px;
+    border-radius:20px;
+    background-color: white;
+    width:332px;
+    margin-right:30px;
+    margin-bottom:30px;
+    margin-top:20px;
+    transition: all 0.3s;
+    cursor:pointer;
+    backface-visibility: hidden;
+}
+
+.back{
+    transform:rotateY(180deg);
+}
+
+.sound img{
+    width:50px;
+    height:50px;
+    float:right;
+}
+
+
+
+
+.front:hover, .back:hover{
+    box-shadow: 0px 0px 5px 5px rgba(70, 70, 70, 0.2); 
+    transition: all 0.3s;
+}
+
+
+
+h1{
+    font-size:48px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top:15vh;
+    margin-left:-60vh;
+    
+}
+
+
+
+.card a{
+    text-decoration: none;
+}
+
+
+img{
+    border-radius:18px 18px 0 0;
+    
+}
+
+
+
+.card p{
+    color:purple;
+}
+
+h2, p{
+    margin-left:10px;
+    margin-top:5px;
+    width:inherit;
+    width:332px;
+    
+}
+
+h2{
+    color:black;
+}
+
+.tilt{
+    float:right;
+    margin-top:-30px;
+    pointer-events: auto;
+}
+
+
+footer{
+    position:absolute;
+    float:right;
+    right:-200px;
+    transition:all 0.5s;
+    position:fixed;
+}
+
+.card2, .card8{
+    transform:translateY(0px);
+    margin-bottom:180px;
+}
+
+
+footer img{
+    height:70px;
+    width:70px;
+    cursor:pointer;
+}
+
